@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./assets/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.quiz-app {
+  background: transparent; /* Semi-transparent white for modern look */
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3); /* Stronger shadow for more depth */
+  width: 90%;
+  max-width: 600px;
+  transition: all 0.3s ease-in-out;
+}
+
+.quiz-app:hover {
+  transform: scale(1.02); /* Slight scaling effect on hover */
+}
+
+.quiz-app h1 {
+  font-size: 36px;
+  color: #444;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 25px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px; /* Slight spacing for elegance */
+}
+
+.question-section {
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  color: #222;
+  margin-bottom: 25px;
+  padding: 15px;
+  background: white; /* Transparent background for text */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+button {
+  padding: 14px 35px;
+  margin: 10px;
+  background: linear-gradient(135deg, #8a2be2, #5d1a99); /* Gradient button */
+  border-radius: 25px;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #7a1eb6, #45136b); /* Darker gradient on hover */
+  transform: translateY(-3px); /* Hover lift effect */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.timer {
+  font-size: 22px;
+  color: green;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Stronger glow effect */
+}
+
+.timer span {
+  color: crimson;
+  font-size: 28px;
+  font-weight: 700;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6); /* Enhance readability */
+}
+
+@media (max-width: 768px) {
+  .options {
+    flex-direction: column;
+  }
+
+  button {
+    padding: 12px 25px;
+    font-size: 16px;
+  }
+
+  .timer {
+    font-size: 20px;
+  }
+
+  .question-section {
+    font-size: 20px;
+  }
+}

@@ -2,7 +2,7 @@
   "name": "nvc",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://<Manobharathi2023>.github.io/nvc",
+  "homepage": "http://Manobharathi2023.github.io/nvc",
   "dependencies": {
     "cra-template": "1.2.0",
     "react": "^19.0.0",

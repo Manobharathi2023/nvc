@@ -2,7 +2,7 @@
   "name": "nvc",
   "version": "0.1.0",
   "private": true,
-  "homepage":"http://Manobharathi2023.github.io/quiz/nvc",
+  "homepage": "http://<Manobharathi2023>.github.io/quiz",
   "dependencies": {
     "cra-template": "1.2.0",
     "react": "^19.0.0",
@@ -34,5 +34,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
